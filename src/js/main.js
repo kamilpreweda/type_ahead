@@ -45,7 +45,7 @@ function displayMatches() {
     return `
       <li>
       <span class="name">${cityName}, ${stateName}</span>
-      <span class="population">${place.population}</span>
+      <span class="population">${numberWithCommas(place.population)}</span>
       </li>
       `;
   }).join(''); // join will create string from an array
